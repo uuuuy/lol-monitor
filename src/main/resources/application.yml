@@ -1,0 +1,21 @@
+server:
+  port: 80
+spring:
+  jackson:
+    default-property-inclusion: NON_NULL
+    date-format: yyyy-MM-dd HH:mm:ss
+    time-zone: GMT+8
+  thymeleaf:
+    cache: false
+  mail:
+    host: smtp.qq.com
+    username: 41611077@qq.com
+    password: yqlvkrlccqiocabe
+    port: 465
+    protocol: smtp
+    properties:
+      mail:
+        smtp:
+          auth: true
+          ssl:
+            enable: true
