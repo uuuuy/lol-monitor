@@ -32,7 +32,7 @@ public class Task {
 		try {
 			lastgame = gameList.getResponse().getMsg().getJSONArray("games").getJSONObject(0);
 		} catch (Exception e) {
-			System.out.println("获取最近游戏ID出错===" + gameList.toString());
+			System.out.println("获取最近游戏ID出错===" + gameList.getResponse().getMsg());
 			return;
 		}
 		String gameId = lastgame.getString("gameId");
